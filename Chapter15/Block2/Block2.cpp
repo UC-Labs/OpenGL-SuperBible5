@@ -3,8 +3,8 @@
 // Demonstrates an assortment of basic 3D concepts
 // Program by Richard S. Wright Jr.
 
-#include <glew.h>
-#include <glxew.h>
+#include <GL/glew.h>
+#include <GL/glxew.h>
 
 #include <GLTools.h>	// OpenGL toolkit
 #include <GLMatrixStack.h>
