@@ -3,14 +3,14 @@
 // New and improved (performance) sphere world
 // Program by Richard S. Wright Jr. and Nicholas Haemel
 
-#include <gltools.h>
+#include <GLTools.h>
 #include <GLShaderManager.h>
 #include <GLFrustum.h>
 #include <GLBatch.h>
 #include <GLMatrixStack.h>
 #include <GLGeometryTransform.h>
-#include <Stopwatch.h>
-#include <gl\wglew.h>
+#include <StopWatch.h>
+//#include <gl\wglew.h>
 #include <math.h>
 #include <stdio.h>
 #include <iostream>
