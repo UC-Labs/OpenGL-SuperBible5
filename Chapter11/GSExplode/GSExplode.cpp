@@ -9,7 +9,7 @@
 #include <GLFrame.h>
 #include <GLFrustum.h>
 #include <GLGeometryTransform.h>
-#include <Stopwatch.h>
+#include <StopWatch.h>
 
 #include <math.h>
 #ifdef __APPLE__
