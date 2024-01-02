@@ -4,12 +4,12 @@
 // Program by Graham Sellers.
 
 // OpenGL toolkit
-#include <gltools.h>
+#include <GLTools.h>
 #include <GLMatrixStack.h>
 #include <GLFrame.h>
 #include <GLFrustum.h>
 #include <GLGeometryTransform.h>
-#include <Stopwatch.h>
+#include <StopWatch.h>
 
 #ifdef __APPLE__
 #include <glut/glut.h>

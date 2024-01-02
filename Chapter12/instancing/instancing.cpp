@@ -1,5 +1,5 @@
-#include <gltools.h>
-#include <Stopwatch.h>
+#include <GLTools.h>
+#include <StopWatch.h>
 
 #ifdef __APPLE__
 #include <glut/glut.h>
