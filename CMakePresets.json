@@ -1,0 +1,44 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+	"major": 3,
+	"minor": 19,
+	"patch": 0
+    },
+    "configurePresets": [
+	{
+	    "name": "default",
+	    "displayName": "Default config",
+	    "description": "Default build options for all builds",
+	    "generator": "Unix Makefiles",
+	    "binaryDir": "build.sb5",
+	    "hidden": true,
+	    "cacheVariables": {
+		"CMAKE_BUILD_TYPE": "Release",
+		"CMAKE_CXX_STANDARD": "20",
+		"CMAKE_POLICY_DEFAULT_CMP0075": "NEW",
+		"CMAKE_MODULE_PATH": "${sourceDir}/cmake",
+		"FREEGLUT_PACKAGE": "gh:Perlmint/glew-cmake#glew-cmake-2.2.0",
+		"GLEW_PACKAGE": "gh:FreeGLUTProject/freeglut#v3.4.0",
+		"OpenGL_GL_PREFERENCE": "GLVND",
+		"FREEGLUT_BUILD_SHARED_LIBS": "OFF;CACHE;BOOL;\"Build Freeglut dynamic?\";FORCE",
+		"FREEGLUT_BUILD_DEMOS": "OFF;CACHE;BOOL;\"Build Freeglut deprecated OpenGL demos?\";FORCE",
+		"glew-cmake_BUILD_SHARED": "OFF;CACHE;BOOL;\"Build GLEW dynamic?\";FORCE"
+	    }
+	},
+	{
+	    "name": "sb5",
+	    "displayName": "Main config",
+	    "description": "Main config for SB5",
+	    "inherits": "default"
+	}
+    ],
+    "buildPresets": [
+	{
+	    "name": "sb5",
+	    "displayName": "build all SuperBible 5 examples",
+	    "description": "SF2 build target",
+	    "configurePreset": "sb5"
+	}
+    ]
+}

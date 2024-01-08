@@ -1,7 +1,7 @@
 cmake_minimum_required( VERSION 3.25 )
 
 project( Chapter15 CXX )
-include( ${CMAKE_SOURCE_DIR}/make_binary.cmake )
+include( make_binary )
 
 foreach( proj Block2 )
 	make_binary( ${proj} )
