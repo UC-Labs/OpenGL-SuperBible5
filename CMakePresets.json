@@ -27,7 +27,7 @@
 	    }
 	},
 	{
-	    "name": "dumb",
+	    "name": "sb5",
 	    "displayName": "Main config",
 	    "description": "Main config for SB5",
 	    "inherits": "default"
@@ -38,7 +38,7 @@
 	    "name": "sb5",
 	    "displayName": "build all SuperBible 5 examples",
 	    "description": "SF2 build target",
-	    "configurePreset": "dumb"
+	    "configurePreset": "sb5"
 	}
     ]
 }
