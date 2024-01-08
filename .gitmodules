@@ -1,6 +1,0 @@
-[submodule "externals/glew"]
-	path = externals/glew
-	url = https://github.com/Perlmint/glew-cmake.git
-[submodule "externals/freeglut"]
-	path = externals/freeglut
-	url = https://github.com/FreeGLUTProject/freeglut.git
