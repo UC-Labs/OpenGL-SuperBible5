@@ -4,10 +4,9 @@ project( GLTools CXX )
 
 add_library( GLTools OBJECT GLBatch.cpp GLShaderManager.cpp GLTools.cpp GLTriangleBatch.cpp math3d.cpp )
 
-target_include_directories( GLTools PUBLIC include ${CMAKE_SOURCE_DIR}/externals/freeglut/include
-        ${CMAKE_SOURCE_DIR}/externals/glew/include )
+target_include_directories( GLTools PUBLIC include
+        $<BUILD_INTERFACE:${glew_cmake_SOURCE_DIR}/include>
+        $<BUILD_INTERFACE:${freeglut_SOURCE_DIR}/include> )
 
-target_link_libraries( GLTools PUBLIC libglew_static freeglut_static m )
+target_link_libraries( GLTools PUBLIC libglew_static freeglut_static )
 
-# make sure everything gets downloaded before building
-add_dependencies( GLTools external_libs )
